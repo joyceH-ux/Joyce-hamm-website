@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Planning Dashboard case study — Mary Joyce Hamm">
+    <title>Travel Planning Dashboard | Mary Joyce Hamm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .case-study { padding-top: 120px; }
+        .case-study-hero {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: var(--card);
+            margin-bottom: 56px;
+        }
+        .case-study-hero img { width: 100%; height: auto; display: block; }
+        .case-study-header {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 56px;
+        }
+        .case-study-category {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .case-study-header h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        .case-study-header p {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        .case-study-body {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        .case-study-section {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 32px 36px;
+            transition: border-color var(--fast);
+        }
+        .case-study-section:hover { border-color: var(--border-hover); }
+        .case-study-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: var(--accent-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 1.15rem;
+            flex-shrink: 0;
+        }
+        .case-study-content { flex: 1; }
+        .case-study-content h2 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 8px;
+        }
+        .case-study-content p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.8; }
+        .case-study-content ul { padding: 0; margin: 4px 0 0; }
+        .case-study-content ul li {
+            position: relative;
+            padding-left: 20px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        .case-study-content ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 11px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+        .case-study-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+        .case-study-tag {
+            padding: 6px 16px;
+            border-radius: 20px;
+            background: var(--accent-subtle);
+            color: var(--accent-secondary);
+            font-size: 0.82rem;
+            font-weight: 500;
+        }
+        .case-study-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 32px;
+            padding: 12px 24px;
+            border-radius: 100px;
+            border: 1px solid var(--border);
+            transition: all var(--fast);
+            align-self: center;
+        }
+        .case-study-back:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            transform: translateX(-4px);
+        }
+        .case-study-images { max-width: 800px; margin: 0 auto 56px; display: flex; flex-direction: column; gap: 20px; }
+        .case-study-images img {
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            width: 100%; height: auto; display: block;
+        }
+        @media (max-width: 768px) {
+            .case-study { padding-top: 90px; }
+            .case-study-header h1 { font-size: 1.6rem; }
+            .case-study-section { flex-direction: column; padding: 24px 20px; gap: 12px; }
+            .case-study-hero { border-radius: var(--radius); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="index.html#about" class="nav-logo">MJH</a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#experience" class="nav-link">Experience</a>
+                <a href="index.html#skills" class="nav-link">Skills</a>
+                <a href="index.html#projects" class="nav-link">Projects</a>
+                <a href="index.html#tools" class="nav-link">Tools</a>
+                <a href="index.html#why-me" class="nav-link">Why Me</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section case-study">
+            <div class="container">
+                <div class="case-study-images">
+                    <img src="PROJECT/TRAVEL ITINERARY_01.png" alt="Travel Planning Dashboard Overview">
+                    <img src="PROJECT/TRAVEL ITINERARY_02.png" alt="Travel Planning Dashboard Details">
+                </div>
+
+                <div class="case-study-header">
+                    <span class="case-study-category">Planning &amp; Organization</span>
+                    <h1>Travel Planning Dashboard</h1>
+                    <p>A centralized Google Sheets dashboard built to organize international travel itineraries, accommodations, destinations, and schedules in one accessible place.</p>
+                </div>
+
+                <div class="case-study-body">
+
+                    <div class="case-study-section">
+                        <div class="case-study-icon"><i class="fas fa-video"></i></div>
+                        <div class="case-study-content">
+                            <h2>Scenario</h2>
+                            <p>Created a personal travel planning dashboard for my 2025 international trip to organize itineraries, accommodations, destinations, and schedules in one place.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-study-section">
+                        <div class="case-study-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <div class="case-study-content">
+                            <h2>Challenge</h2>
+                            <p>Build a centralized system that keeps all travel information organized, easy to access, and simple to update throughout the trip.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-study-section">
+                        <div class="case-study-icon"><i class="fas fa-check-double"></i></div>
+                        <div class="case-study-content">
+                            <h2>Tasks Completed</h2>
+                            <ul>
+                                <li>Designed a Google Sheets travel planning dashboard.</li>
+                                <li>Created a day-by-day travel itinerary.</li>
+                                <li>Organized accommodation details and hotel addresses.</li>
+                                <li>Added tourist destinations and daily activities.</li>
+                                <li>Integrated Google Maps links for easy navigation.</li>
+                                <li>Structured travel information into a clean, easy-to-use dashboard.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="case-study-section">
+                        <div class="case-study-icon"><i class="fas fa-wrench"></i></div>
+                        <div class="case-study-content">
+                            <h2>Tools Used</h2>
+                            <div class="case-study-tags">
+                                <span class="case-study-tag">Google Sheets</span>
+                                <span class="case-study-tag">Google Maps</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-study-section">
+                        <div class="case-study-icon"><i class="fas fa-star"></i></div>
+                        <div class="case-study-content">
+                            <h2>Skills Demonstrated</h2>
+                            <div class="case-study-tags">
+                                <span class="case-study-tag">Travel Planning</span>
+                                <span class="case-study-tag">Administrative Support</span>
+                                <span class="case-study-tag">Internet Research</span>
+                                <span class="case-study-tag">Data Organization</span>
+                                <span class="case-study-tag">Schedule Management</span>
+                                <span class="case-study-tag">Attention to Detail</span>
+                                <span class="case-study-tag">Documentation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-study-section">
+                        <div class="case-study-icon"><i class="fas fa-flag-checkered"></i></div>
+                        <div class="case-study-content">
+                            <h2>Outcome</h2>
+                            <p>Developed a well-organized travel dashboard that demonstrates my ability to plan trips, manage information efficiently, and create clear, easy-to-follow travel itineraries that can be adapted for future clients.</p>
+                        </div>
+                    </div>
+
+                    <div class="case-study-section">
+                        <div class="case-study-icon"><i class="fas fa-handshake"></i></div>
+                        <div class="case-study-content">
+                            <h2>How I Can Help Clients</h2>
+                            <p>I help clients plan and organize business or personal travel by creating detailed itineraries, researching accommodations, and keeping travel information organized in one place.</p>
+                        </div>
+                    </div>
+
+                    <a href="index.html#projects" class="case-study-back"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-brand">MJH</span>
+                <p class="footer-copy">&copy; <span id="currentYear"></span> Mary Joyce Hamm. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#skills">Skills</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#contact">Contact</a>
+                    <a href="https://www.linkedin.com/in/maryjoyce-hamm" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

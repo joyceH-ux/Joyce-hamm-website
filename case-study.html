@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Case study — Mary Joyce Hamm | Virtual Assistant">
+    <title>Case Study | Mary Joyce Hamm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .case-study { padding: 140px 0 80px; }
+        .case-back { margin-bottom: 40px; display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: var(--text-secondary); transition: color var(--fast); }
+        .case-back:hover { color: var(--accent); }
+        .case-back i { font-size: 12px; }
+        .case-header { margin-bottom: 48px; }
+        .case-header .section-label { margin-bottom: 16px; }
+        .case-header h1 { font-size: clamp(30px, 4vw, 44px); font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 16px; }
+        .case-header p { font-size: 17px; color: var(--text-secondary); font-weight: 300; max-width: 600px; line-height: 1.8; }
+        .case-image { width: 100%; height: 400px; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 56px; background: var(--card); display: flex; align-items: center; justify-content: center; border: 1px solid var(--border); }
+        .case-image img { width: 100%; height: 100%; object-fit: cover; }
+        .case-image .placeholder-icon { font-size: 56px; color: var(--accent); opacity: 0.3; }
+        .case-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 56px; }
+        .case-section { margin-bottom: 48px; }
+        .case-section:last-child { margin-bottom: 0; }
+        .case-section h2 { font-size: 20px; font-weight: 600; color: var(--text); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+        .case-section h2 i { font-size: 16px; color: var(--accent); }
+        .case-section p, .case-section li { font-size: 15px; font-weight: 300; color: var(--text-secondary); line-height: 1.9; }
+        .case-section ul { padding: 0; }
+        .case-section li { list-style: none; padding-left: 20px; position: relative; margin-bottom: 8px; }
+        .case-section li::before { content: ''; position: absolute; left: 0; top: 10px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); opacity: 0.5; }
+        .case-tools { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+        .case-tools span { font-size: 12px; font-weight: 500; color: var(--accent); padding: 6px 18px; background: rgba(139,92,246,0.06); border: 1px solid rgba(139,92,246,0.1); border-radius: 50px; }
+        .case-skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px; }
+        .case-skills span { font-size: 12px; font-weight: 500; color: var(--text-secondary); padding: 6px 18px; border: 1px solid var(--border); border-radius: 50px; }
+        .case-outcome { background: var(--bg-secondary); border-radius: var(--radius); padding: 36px; border: 1px solid var(--border); margin-top: 16px; }
+        .case-outcome p { font-size: 16px; color: var(--text); }
+        @media (max-width: 768px) {
+            .case-study { padding: 100px 0 60px; }
+            .case-image { height: 240px; }
+            .case-grid { grid-template-columns: 1fr; gap: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <main>
+        <section class="section case-study" id="case-study">
+            <div class="container" id="caseContent">
+                <a href="index.html#projects" class="case-back"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+                <div class="case-header">
+                    <span class="section-label" id="caseLabel">Case Study</span>
+                    <h1 id="caseTitle">Loading...</h1>
+                    <p id="caseDesc"></p>
+                </div>
+                <div class="case-image" id="caseImage">
+                    <div class="placeholder-icon"><i class="fas fa-spinner fa-spin"></i></div>
+                </div>
+                <div class="case-grid" id="caseGrid">
+                    <div class="case-section">
+                        <h2><i class="fas fa-bullseye"></i> Scenario</h2>
+                        <p id="caseScenario"></p>
+                    </div>
+                    <div class="case-section">
+                        <h2><i class="fas fa-exclamation-triangle"></i> Challenge</h2>
+                        <p id="caseChallenge"></p>
+                    </div>
+                </div>
+                <div class="case-section">
+                    <h2><i class="fas fa-check-circle"></i> Tasks Completed</h2>
+                    <ul id="caseTasks"></ul>
+                </div>
+                <div class="case-grid">
+                    <div class="case-section">
+                        <h2><i class="fas fa-wrench"></i> Tools Used</h2>
+                        <div class="case-tools" id="caseTools"></div>
+                    </div>
+                    <div class="case-section">
+                        <h2><i class="fas fa-star"></i> Skills Demonstrated</h2>
+                        <div class="case-skills" id="caseSkills"></div>
+                    </div>
+                </div>
+                <div class="case-section">
+                    <h2><i class="fas fa-trophy"></i> Outcome</h2>
+                    <div class="case-outcome">
+                        <p id="caseOutcome"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+    (function () {
+        var projects = {
+            'file-organization': {
+                title: 'Business File Organization',
+                desc: 'Organized a messy Google Drive into a clean, searchable filing system with consistent naming conventions and access controls.',
+                label: 'Administrative Support',
+                image: 'images/projects/business-file-organization.jpg',
+                imageFallback: 'fa-folder-tree',
+                scenario: 'A small business owner had been using Google Drive for over two years without any folder structure. Files were scattered across shared drives, personal folders, and email attachments. Team members frequently lost documents and created duplicate files, causing confusion and wasted time searching for important information.',
+                challenge: 'The client needed a complete file organization system that was intuitive enough for the entire team to adopt, scalable for future growth, and easy to maintain without ongoing administrative overhead.',
+                tasks: [
+                    'Audited all existing files across shared drives and personal folders',
+                    'Created a logical folder hierarchy organized by department, project, and year',
+                    'Developed a file naming convention standard for the entire team',
+                    'Migrated and categorized over 1,200 files into the new structure',
+                    'Set up access permissions and sharing settings for each team member',
+                    'Created a simple file management guide for onboarding and reference',
+                    'Implemented a monthly file review schedule to prevent future clutter'
+                ],
+                tools: ['Google Drive', 'Google Docs', 'Google Sheets'],
+                skills: ['File Organization', 'Information Architecture', 'Process Documentation', 'Attention to Detail', 'System Design'],
+                outcome: 'The team reduced file search time by roughly 80% and eliminated duplicate files completely. Team onboarding became faster because new members could quickly find templates and reference materials. The business owner reported feeling more in control of company documents for the first time since starting the business.'
+            },
+            'inbox-management': {
+                title: 'Customer Support Inbox Management',
+                desc: 'Designed a streamlined Gmail workflow with intelligent labels, canned responses, and priority triage for faster customer response times.',
+                label: 'Customer Service',
+                image: 'images/projects/inbox-management.jpg',
+                imageFallback: 'fa-inbox',
+                scenario: 'An e-commerce business was receiving over 100 customer inquiries daily through a single shared Gmail inbox. Emails were being missed, response times were inconsistent, and there was no system for tracking which inquiries needed follow-up or escalation.',
+                challenge: 'The client needed a sustainable inbox management system that could handle high volume without overwhelming the support team, ensure no inquiry went unanswered, and provide visibility into response times and common customer issues.',
+                tasks: [
+                    'Analyzed email volume patterns and common inquiry types',
+                    'Created a multi-level label system for categorization and prioritization',
+                    'Set up automatic filtering rules to sort incoming messages',
+                    'Developed a library of canned responses for frequent inquiries',
+                    'Implemented a triage workflow for urgent vs. routine messages',
+                    'Established a daily inbox-zero routine for the support team',
+                    'Created a weekly report template to track response times and issue trends'
+                ],
+                tools: ['Gmail', 'Google Workspace'],
+                skills: ['Email Management', 'Workflow Design', 'Customer Support', 'Process Optimization', 'Communication'],
+                outcome: 'Average response time dropped from 24 hours to under 4 hours. No customer inquiry went unanswered. The team gained full visibility into their workload and could proactively identify recurring issues. Customer satisfaction scores improved noticeably within the first month.'
+            },
+            'calendar-management': {
+                title: 'Executive Calendar Management',
+                desc: 'Built a well-structured weekly executive calendar with time blocking, priority scheduling, and proactive meeting coordination.',
+                label: 'Administrative Support',
+                image: 'images/projects/calendar-management.jpg',
+                imageFallback: 'fa-calendar-check',
+                scenario: 'A busy executive was struggling with back-to-back meetings, frequent double-bookings, and no protected time for deep work. Scheduling across multiple time zones with clients and partners was causing recurring conflicts and missed deadlines.',
+                challenge: 'The client needed a calendar management system that respected their time, reduced scheduling conflicts, protected focus hours, and made cross-timezone coordination effortless.',
+                tasks: [
+                    'Audited the existing calendar and identified scheduling pain points',
+                    'Implemented time blocking: dedicated focus hours, meeting blocks, and buffer time',
+                    'Created a standardized meeting request process for internal and external stakeholders',
+                    'Set up automated reminders and preparation time before key meetings',
+                    'Built a weekly planning routine to review priorities and adjust the schedule',
+                    'Established protocols for rescheduling and cancellation with notifications'
+                ],
+                tools: ['Google Calendar', 'Google Meet'],
+                skills: ['Calendar Management', 'Time Blocking', 'Priority Management', 'Communication', 'Organization'],
+                outcome: 'The executive regained roughly 12 hours per week of focused work time. Double-bookings were eliminated entirely. Meetings started and ended on time, and cross-timezone scheduling became a seamless process rather than a daily frustration.'
+            },
+            'travel-dashboard': {
+                title: 'Travel Planning Dashboard',
+                desc: 'Created a comprehensive travel planning tool with itinerary tracking, budget management, and emergency contact information in one organized spreadsheet.',
+                label: 'Travel Planning',
+                image: 'images/projects/travel-dashboard.jpg',
+                imageFallback: 'fa-plane',
+                scenario: 'A business owner who traveled frequently for conferences and client meetings had no centralized system for planning trips. Itineraries were scattered across email confirmations, notes apps, and paper documents. Budget tracking was inconsistent, leading to overspending.',
+                challenge: 'The client needed a single-source-of-truth dashboard that could manage the entire trip lifecycle: planning, booking, tracking, and post-trip expense reporting.',
+                tasks: [
+                    'Designed a Google Sheets dashboard with dedicated tabs for each trip phase',
+                    'Built an itinerary tracker with flight details, hotel bookings, and meeting schedules',
+                    'Created an accommodation research section with ratings, prices, and location maps',
+                    'Developed a budget tracker with categories, actual spending, and variance analysis',
+                    'Added an emergency contacts section with local embassy and insurance information',
+                    'Included a packing checklist template customizable for different trip types',
+                    'Set up conditional formatting for budget alerts and approaching deadlines'
+                ],
+                tools: ['Google Sheets', 'Google Maps'],
+                skills: ['Travel Planning', 'Data Organization', 'Budget Management', 'Attention to Detail', 'Research'],
+                outcome: 'The client had a complete view of every trip in one place. Budget overspending was reduced by making costs visible in real time. The stress of trip preparation decreased significantly, and the client reported feeling more confident and prepared before every business trip.'
+            },
+            'expense-tracker': {
+                title: 'Business Expense Tracker',
+                desc: 'Built a detailed Excel spreadsheet with automated formulas, data validation, charts, and category-based filtering for easy expense monitoring.',
+                label: 'Data Entry',
+                image: 'images/projects/expense-tracker.jpg',
+                imageFallback: 'fa-chart-line',
+                scenario: 'A freelance consultant was tracking business expenses in a simple notes app with no categorization, no receipt tracking, and no reporting. Tax season was particularly stressful because expenses had to be reconstructed from bank statements and memory.',
+                challenge: 'The client needed an easy-to-use expense tracking system that could capture expenses in real time, categorize them for tax purposes, and generate simple reports for quarterly review.',
+                tasks: [
+                    'Designed a structured Excel workbook with expense entry, summary, and reporting tabs',
+                    'Created drop-down menus for expense categories aligned with tax deduction types',
+                    'Built formulas for automatic totals, running balances, and monthly summaries',
+                    'Added conditional formatting to highlight high-value or unusual expenses',
+                    'Integrated a receipt tracking system with naming conventions for digital copies',
+                    'Created pivot tables and charts for visual expense analysis by category and month',
+                    'Developed a simple quarterly report template for tax preparation'
+                ],
+                tools: ['Microsoft Excel', 'Google Sheets'],
+                skills: ['Data Entry', 'Excel Formulas', 'Data Analysis', 'Financial Organization', 'Reporting'],
+                outcome: 'The consultant reduced tax preparation time by several hours each quarter. Expense tracking became a quick weekly habit instead of a frantic year-end scramble. The visual charts helped identify unnecessary spending patterns, leading to more informed business spending decisions.'
+            },
+            'task-workspace': {
+                title: 'Task Management Workspace',
+                desc: 'Created a project management dashboard with task prioritization, deadline tracking, progress monitoring, and team workflow visibility.',
+                label: 'Workflow Support',
+                image: 'images/projects/task-workspace.jpg',
+                imageFallback: 'fa-columns',
+                scenario: 'A growing marketing agency was managing projects through email threads and informal messages. Tasks were frequently missed, deadlines slipped without warning, and team members had no visibility into who was working on what.',
+                challenge: 'The client needed a lightweight project management system that could be adopted quickly by a non-technical team, provide clear task ownership and deadlines, and offer enough structure to keep projects moving without adding administrative overhead.',
+                tasks: [
+                    'Evaluated the agency\'s workflow and identified key project stages',
+                    'Designed a kanban-style task board with stages: To Do, In Progress, Review, Done',
+                    'Created task templates for recurring project types to save setup time',
+                    'Set up priority levels and deadline tracking with visual status indicators',
+                    'Established a weekly check-in routine to review progress and reassign tasks',
+                    'Built a simple reporting view for management to see team capacity and workload'
+                ],
+                tools: ['Google Sheets', 'Trello'],
+                skills: ['Project Management', 'Workflow Design', 'Team Coordination', 'Process Building', 'Communication'],
+                outcome: 'Project completion rates improved as task ownership became clear and deadlines were visible to everyone. The team reduced missed deadlines significantly within the first two months. The agency owner gained confidence that projects were on track without needing to check in constantly.'
+            }
+        };
+
+        var params = new URLSearchParams(window.location.search);
+        var projectKey = params.get('project') || 'file-organization';
+        var data = projects[projectKey];
+
+        if (!data) {
+            window.location.href = 'index.html#projects';
+            return;
+        }
+
+        document.getElementById('caseLabel').textContent = data.label;
+        document.getElementById('caseTitle').textContent = data.title;
+        document.getElementById('caseDesc').textContent = data.desc;
+
+        var img = document.getElementById('caseImage');
+        var imgInner = document.createElement('img');
+        imgInner.src = data.image;
+        imgInner.alt = data.title;
+        imgInner.onerror = function () {
+            this.style.display = 'none';
+            img.innerHTML = '<div class="placeholder-icon"><i class="fas ' + data.imageFallback + '"></i></div>';
+        };
+        img.innerHTML = '';
+        img.appendChild(imgInner);
+
+        document.getElementById('caseScenario').textContent = data.scenario;
+        document.getElementById('caseChallenge').textContent = data.challenge;
+
+        var tasksList = document.getElementById('caseTasks');
+        data.tasks.forEach(function (t) {
+            var li = document.createElement('li');
+            li.textContent = t;
+            tasksList.appendChild(li);
+        });
+
+        var toolsDiv = document.getElementById('caseTools');
+        data.tools.forEach(function (t) {
+            var span = document.createElement('span');
+            span.textContent = t;
+            toolsDiv.appendChild(span);
+        });
+
+        var skillsDiv = document.getElementById('caseSkills');
+        data.skills.forEach(function (s) {
+            var span = document.createElement('span');
+            span.textContent = s;
+            skillsDiv.appendChild(span);
+        });
+
+        document.getElementById('caseOutcome').textContent = data.outcome;
+
+        var titleEl = document.querySelector('title');
+        if (titleEl) titleEl.textContent = data.title + ' | Case Study | Mary Joyce Hamm';
+
+        var cy = document.getElementById('currentYear'); if (cy) cy.textContent = new Date().getFullYear();
+    })();
+    </script>
+</body>
+</html>
