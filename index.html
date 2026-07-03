@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mary Joyce Hamm — Virtual Assistant & Data Entry Specialist helping business owners stay organized so they can focus on growth.">
+    <meta name="description" content="Mary Joyce Hamm — General Virtual Assistant helping business owners stay organized so they can focus on growth.">
     <meta name="author" content="Mary Joyce Hamm">
-    <title>Mary Joyce Hamm | Virtual Assistant & Data Entry Specialist</title>
+    <title>Mary Joyce Hamm | Virtual Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,454 +16,422 @@
 
     <div class="scroll-progress" id="scrollProgress"></div>
 
-    <header class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">MJH</a>
-            <nav class="nav-menu" id="navMenu">
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#about" class="nav-logo">MJH</a>
+            <div class="nav-links" id="navLinks">
                 <a href="#about" class="nav-link" data-section="about">About</a>
-                <a href="#education" class="nav-link" data-section="education">Education</a>
                 <a href="#experience" class="nav-link" data-section="experience">Experience</a>
                 <a href="#skills" class="nav-link" data-section="skills">Skills</a>
-                <a href="#services" class="nav-link" data-section="services">Services</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
                 <a href="#tools" class="nav-link" data-section="tools">Tools</a>
                 <a href="#why-me" class="nav-link" data-section="why-me">Why Me</a>
-                <a href="#contact" class="nav-link nav-cta" data-section="contact">Contact</a>
-            </nav>
-            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
             </button>
         </div>
-    </header>
+    </nav>
 
     <main>
-        <section class="hero" id="hero">
+        <!-- ===== ABOUT (Hero + About Me + Professional Experience) ===== -->
+        <div id="about">
+        <!-- ===== HERO ===== -->
+        <section class="hero">
             <div class="hero-bg">
-                <div class="hero-bg-circle hero-bg-circle--1"></div>
-                <div class="hero-bg-circle hero-bg-circle--2"></div>
-                <div class="hero-bg-circle hero-bg-circle--3"></div>
+                <div class="hero-glow"></div>
+                <div class="hero-orb hero-orb--1"></div>
+                <div class="hero-orb hero-orb--2"></div>
+                <div class="hero-orb hero-orb--3"></div>
+                <div class="hero-orb hero-orb--4"></div>
+                <div class="hero-orb hero-orb--5"></div>
+                <div class="hero-orb hero-orb--6"></div>
+                <div class="hero-orb hero-orb--7"></div>
+                <div class="hero-orb hero-orb--8"></div>
+                <div class="hero-curve hero-curve--1"></div>
+                <div class="hero-curve hero-curve--2"></div>
+                <div class="hero-particle"></div>
+                <div class="hero-particle"></div>
+                <div class="hero-particle"></div>
+                <div class="hero-particle"></div>
+                <div class="hero-particle"></div>
+                <div class="hero-particle"></div>
+                <div class="hero-particle"></div>
+                <div class="hero-particle"></div>
+                <div class="hero-grid"></div>
+                <div class="shooting-star"></div>
+                <div class="shooting-star"></div>
+                <div class="shooting-star"></div>
             </div>
-            <div class="container hero-content">
-                <p class="hero-greeting fade-in">Hello, I'm</p>
-                <h1 class="hero-name fade-in">Mary Joyce Hamm</h1>
-                <p class="hero-title fade-in">Virtual Assistant &middot; Data Entry Specialist</p>
-                <p class="hero-tagline fade-in">I help <strong>business owners and entrepreneurs</strong> stay organized and on top of their data so they can focus on growing their business, not drowning in admin work.</p>
-                <p class="hero-location fade-in"><i class="fas fa-map-marker-alt"></i> Bataan, Philippines</p>
-                <div class="hero-actions fade-in">
-                    <a href="#contact" class="btn btn--primary">Let's Work Together</a>
-                    <a href="#services" class="btn btn--outline">View Services</a>
+            <div class="hero-inner">
+                <div class="hero-left">
+                    <p class="hero-intro">Hello, I'm</p>
+                    <h1 class="hero-name">Mary Joyce Hamm</h1>
+                    <p class="hero-role">General Virtual Assistant / Data Entry Specialist</p>
+                    <h2 class="hero-tagline">Helping Busy Business Owners Stay Organized So They Can Focus on Growing Their Business.</h2>
+                    <div class="hero-actions">
+                        <a href="Maryjoyce%20Hamm_Resume.pdf" target="_blank" rel="noopener" class="btn btn--primary">View Resume</a>
+                        <a href="#contact" class="btn btn--outline">Contact Me</a>
+                    </div>
+                    <div class="hero-badges">
+                        <span class="hero-badge">✓ Administrative Support</span>
+                        <span class="hero-badge">✓ Customer Service</span>
+                        <span class="hero-badge">✓ Data Entry</span>
+                        <span class="hero-badge">✓ Email Management</span>
+                        <span class="hero-badge">✓ Calendar Organization</span>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-card hero-card--1">
+                        <div class="hero-card-preview preview-email"></div>
+                        <div>
+                            <strong>Email Management</strong>
+                            <span>Inbox organization &amp; filtering</span>
+                        </div>
+                    </div>
+                    <div class="hero-card hero-card--2">
+                        <div class="hero-card-preview preview-calendar"></div>
+                        <div>
+                            <strong>Google Calendar</strong>
+                            <span>Scheduling &amp; coordination</span>
+                        </div>
+                    </div>
+                    <div class="hero-card hero-card--3">
+                        <div class="hero-card-preview preview-sheets"></div>
+                        <div>
+                            <strong>Google Sheets</strong>
+                            <span>Data entry &amp; reporting</span>
+                        </div>
+                    </div>
+                    <div class="hero-card hero-card--4">
+                        <div class="hero-card-preview preview-support"></div>
+                        <div>
+                            <strong>Customer Support</strong>
+                            <span>Professional client care</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a href="#about" class="scroll-indicator">
-                <span class="scroll-indicator-text">Scroll</span>
-                <span class="scroll-indicator-arrow"><i class="fas fa-chevron-down"></i></span>
+            <a href="#about" class="hero-scroll">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
             </a>
         </section>
 
-        <section class="section about" id="about">
-            <div class="container about-grid">
-                <div class="about-image-wrapper animate-on-scroll">
-                    <div class="about-image">
-                        <img src="images/about-photo.jpg" alt="Mary Joyce Hamm" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=&quot;about-image-placeholder&quot;>MJH</div>'">
+        <!-- ===== ABOUT ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="about-inner animate-on-scroll">
+                    <div class="about-image-wrap">
+                        <div class="about-image">
+                            <img src="images/about-photo.jpg" alt="Mary Joyce Hamm" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;width:100%;height:100%;background:linear-gradient(135deg,rgba(198,166,106,0.08),rgba(139,168,136,0.05));display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:700;color:#C6A66A;&quot;>MJH</div>'">
+                        </div>
+                        <div class="about-image-frame"></div>
                     </div>
-                    <div class="about-decoration"></div>
-                </div>
-                <div class="about-content animate-on-scroll">
-                    <p class="section-label">About Me</p>
-                    <h2 class="section-title">Organized by nature.<br>Driven by results.</h2>
-                    <p>I help busy business owners stay organized, manage administrative tasks efficiently, and provide excellent customer support so they can focus on growing their business.</p>
-                    <p>My background in customer service and administrative support has taught me the importance of accuracy, organization, and clear communication. From assisting customers and managing records to handling day-to-day administrative responsibilities, I've developed the skills to keep workflows running smoothly and efficiently.</p>
-                    <p>When you work with me, you gain a dependable partner who delivers quality work on time, communicates proactively, and takes ownership of every task. My goal is to make your day easier by keeping your operations organized and your business running smoothly.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Commitment</span>
+                    <div class="about-content">
+                        <span class="section-label">About Me</span>
+                        <h2 class="section-title">Organized by nature.<br>Driven by results.</h2>
+                        <p>I help busy business owners stay organized, manage administrative tasks efficiently, and provide excellent customer support so they can focus on growing their business.</p>
+                        <p>My background in customer service and administrative support has taught me the importance of accuracy, organization, and clear communication. From assisting customers and managing records to handling day-to-day administrative responsibilities, I've developed the skills to keep workflows running smoothly and efficiently.</p>
+                        <p>When you work with me, you gain a dependable partner who delivers quality work on time, communicates proactively, and takes ownership of every task. My goal is to make your day easier by keeping your operations organized and your business running smoothly.</p>
+                        <div class="about-badges">
+                            <span class="badge">Fast Learner</span>
+                            <span class="badge">Detail-Oriented</span>
+                            <span class="badge">Reliable Support</span>
+                            <span class="badge">Administrative Experience</span>
+                            <span class="badge">Excellent Communication</span>
+                            <span class="badge">Problem Solver</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Tools & Platforms</span>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
+        </div>
 
-        <section class="section education" id="education">
+        <!-- ===== EXPERIENCE ===== -->
+        <section class="section section--alt" id="experience">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <p class="section-label">Education & Credentials</p>
-                    <h2 class="section-title">Academic Foundation</h2>
+                    <span class="section-label">Background</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                    <p class="section-desc">A track record of reliable administrative support, customer service, and operational efficiency.</p>
                 </div>
-                <div class="education-card animate-on-scroll">
-                    <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="education-details">
-                        <h3>Bachelor of Science in Elementary Education</h3>
-                        <p class="education-school">Bataan Peninsula State University</p>
-                        <p class="education-location"><i class="fas fa-map-marker-alt"></i> Bagac, Bataan, Philippines</p>
-                        <p class="education-year">Graduated 2018</p>
-                        <div class="education-coursework">
-                            <span>Relevant Coursework:</span>
-                            <div class="coursework-tags">
-                                <span>Educational Technology</span>
-                                <span>Computer Technology</span>
-                                <span>Office Productivity Tools</span>
-                                <span>Classroom Management</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="certifications animate-on-scroll">
-                    <h3>Certifications</h3>
-                    <div class="cert-grid">
-                        <div class="cert-item">
-                            <i class="fas fa-award"></i>
+                <div class="about-exp">
+
+                    <div class="about-exp-card">
+                        <div class="about-exp-header">
+                            <div class="about-exp-icon"><i class="fas fa-building"></i></div>
                             <div>
-                                <p class="cert-name">Introduction to Privacy and Data Protection</p>
-                                <p class="cert-issuer">Palawan Pawnshop &middot; 2024</p>
+                                <h4 class="about-exp-job">Branch Assistant</h4>
+                                <p class="about-exp-company">Palawan Group of Companies</p>
+                                <span class="about-exp-date">June 2024 – February 2026</span>
                             </div>
                         </div>
-                        <div class="cert-item">
-                            <i class="fas fa-award"></i>
+                        <div class="about-exp-divider"></div>
+                        <div class="about-exp-body">
+                            <ul>
+                                <li>Processed remittance and payment transactions accurately while maintaining organized digital and physical records.</li>
+                                <li>Provided professional customer support by resolving inquiries and delivering excellent service.</li>
+                                <li>Performed administrative tasks including data entry, document management, report preparation, and record updates.</li>
+                                <li>Managed cash transactions, balanced daily reports, and handled multiple time-sensitive tasks while maintaining confidentiality and accuracy.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="about-exp-card">
+                        <div class="about-exp-header">
+                            <div class="about-exp-icon"><i class="fas fa-prescription-bottle"></i></div>
                             <div>
-                                <p class="cert-name">Information Security Awareness</p>
-                                <p class="cert-issuer">Palawan Pawnshop &middot; 2025</p>
+                                <h4 class="about-exp-job">Pharmacy Assistant</h4>
+                                <p class="about-exp-company">Mercury Drug Corporation</p>
+                                <span class="about-exp-date">June 2018 – October 2019</span>
                             </div>
                         </div>
-                        <div class="cert-item">
-                            <i class="fas fa-award"></i>
-                            <div>
-                                <p class="cert-name">AML & Countering Financing of Terrorism (CFT)</p>
-                                <p class="cert-issuer">Palawan Pawnshop &middot; 2025</p>
-                            </div>
+                        <div class="about-exp-divider"></div>
+                        <div class="about-exp-body">
+                            <ul>
+                                <li>Assisted customers with medication and over-the-counter product inquiries.</li>
+                                <li>Processed prescriptions and organized customer information under pharmacist supervision.</li>
+                                <li>Supported pharmacists with medication preparation and dispensing while maintaining accuracy.</li>
+                                <li>Maintained pharmacy records and assisted with administrative duties to support daily operations.</li>
+                            </ul>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="section experience" id="experience">
+        <!-- ===== SKILLS ===== -->
+        <section class="section section--alt" id="skills">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <p class="section-label">Work Experience</p>
-                    <h2 class="section-title">Proven Track Record</h2>
-                    <p class="section-description">The experience and expertise that back up my commitment to your success.</p>
-                </div>
-                <div class="experience-content">
-                    <div class="timeline animate-on-scroll">
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <span class="timeline-date">Jun 2024 &ndash; Feb 2026</span>
-                                <h3>Branch Assistant & Administrative Support Specialist</h3>
-                                <p class="timeline-company">Palawan Pawnshop</p>
-                                <ul>
-                                    <li>Processed remittance and payment transactions accurately while maintaining organized digital and physical records with strong attention to detail.</li>
-                                    <li>Provided professional customer support by responding to inquiries, resolving concerns, and delivering excellent service in a fast-paced environment.</li>
-                                    <li>Performed administrative tasks, including data entry, document management, report preparation, and record updates to support daily operations.</li>
-                                    <li>Managed cash transactions, balanced daily reports, and prioritized multiple time-sensitive tasks while maintaining accuracy, confidentiality, and efficiency.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <span class="timeline-date">Jun 2018 &ndash; Oct 2019</span>
-                                <h3>Pharmacy Assistant</h3>
-                                <p class="timeline-company">Mercury Drug Corporation</p>
-                                <ul>
-                                    <li>Assisted customers with medication inquiries, over-the-counter product selection, and prescription-related concerns while providing professional customer service.</li>
-                                    <li>Processed prescriptions by preparing medications, labeling, and organizing customer information under the supervision of a licensed pharmacist.</li>
-                                    <li>Supported licensed pharmacists with medication preparation and dispensing while ensuring accuracy and compliance with company procedures.</li>
-                                    <li>Maintained organized pharmacy records, assisted with administrative tasks, and ensured a clean, orderly, and efficient work environment.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <span class="timeline-date">2015 &ndash; 2017</span>
-                                <h3>Community Task Force Member</h3>
-                                <p class="timeline-company">Barangay Youth Organization</p>
-                                <ul>
-                                    <li>Organized community service projects including school supply distribution to children in need.</li>
-                                    <li>Coordinated seminars and skills training workshops for youth development.</li>
-                                    <li>Managed event logistics, participant registration, and resource allocation.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section skills" id="skills">
-            <div class="container">
-                <div class="section-header animate-on-scroll">
-                    <p class="section-label">Core Competencies</p>
-                    <h2 class="section-title">What I Bring to the Table</h2>
-                    <p class="section-description">A versatile skill set designed to keep your operations running smoothly.</p>
-                </div>
-                <div class="skills-grid">
-                    <div class="skill-card animate-on-scroll">
-                        <div class="skill-icon"><i class="fas fa-keyboard"></i></div>
-                        <h3>Data Entry Accuracy</h3>
-                        <p>Fast, precise, and error-free data input across any platform.</p>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <div class="skill-icon"><i class="fas fa-headset"></i></div>
-                        <h3>Customer Service</h3>
-                        <p>Professional, empathetic support that keeps clients happy.</p>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <div class="skill-icon"><i class="fas fa-briefcase"></i></div>
-                        <h3>Administrative Support</h3>
-                        <p>Comprehensive back-office management that keeps things moving.</p>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <div class="skill-icon"><i class="fas fa-folder-open"></i></div>
-                        <h3>Records Management</h3>
-                        <p>Organized, accessible, and secure document systems.</p>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <div class="skill-icon"><i class="fas fa-envelope"></i></div>
-                        <h3>Email Management</h3>
-                        <p>Inbox zero isn't a goal &mdash; it's my standard.</p>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <div class="skill-icon"><i class="fas fa-clock"></i></div>
-                        <h3>Organization & Time Management</h3>
-                        <p>Your time is valuable. I protect it.</p>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <div class="skill-icon"><i class="fas fa-search"></i></div>
-                        <h3>Attention to Detail</h3>
-                        <p>I notice the things others miss. Every time.</p>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                        <h3>Google Workspace</h3>
-                        <p>Docs, Sheets, Drive, Calendar &mdash; fluently.</p>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <div class="skill-icon"><i class="fas fa-bolt"></i></div>
-                        <h3>Fast Learning & Adaptability</h3>
-                        <p>New tools, new systems &mdash; I pick them up quickly.</p>
-                    </div>
-                    <div class="skill-card animate-on-scroll">
-                        <div class="skill-icon"><i class="fas fa-comments"></i></div>
-                        <h3>Communication Skills</h3>
-                        <p>Clear, professional, and proactive in every interaction.</p>
-                    </div>
-                </div>
-                <div class="languages animate-on-scroll">
-                    <h3>Languages</h3>
-                    <div class="lang-grid">
-                        <div class="lang-item">
-                            <span class="lang-name">English</span>
-                            <span class="lang-level">Proficient</span>
-                        </div>
-                        <div class="lang-item">
-                            <span class="lang-name">Filipino</span>
-                            <span class="lang-level">Native / Fluent</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section services" id="services">
-            <div class="container">
-                <div class="section-header animate-on-scroll">
-                    <p class="section-label">What I Deliver</p>
-                    <h2 class="section-title">Services Built Around Your Needs</h2>
-                    <p class="section-description">Focused services designed to give busy professionals their time back.</p>
+                    <span class="section-label">What I Deliver</span>
+                    <h2 class="section-title">How I Can Help</h2>
+                    <p class="section-desc">Focused skills designed to give busy professionals their time back.</p>
                 </div>
                 <div class="services-grid">
                     <div class="service-card animate-on-scroll">
-                        <div class="service-number">01</div>
-                        <h3>Accurate Data Entry & Management</h3>
-                        <p>Clean, error-free data across your spreadsheets and systems &mdash; handled through meticulous input, verification, and organization.</p>
+                        <div class="service-image"><img src="SERVICES/ADMINISTRATIVE SUPPORT.jpg" alt="Administrative Support" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'service-image-placeholder\'><i class=\'fas fa-building\'></i></div>'"></div>
+                        <div class="service-body">
+                            <h3>Administrative Support</h3>
+                            <p>Comprehensive back-office management including document preparation, file organization, scheduling, and day-to-day operational support.</p>
+                        </div>
                     </div>
                     <div class="service-card animate-on-scroll">
-                        <div class="service-number">02</div>
-                        <h3>Email & Inbox Management</h3>
-                        <p>An organized, prioritized inbox every morning &mdash; achieved through smart filtering, tagging, and timely follow-ups.</p>
+                        <div class="service-image"><img src="SERVICES/DATA ENTRY.jpg" alt="Data Entry" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'service-image-placeholder\'><i class=\'fas fa-database\'></i></div>'"></div>
+                        <div class="service-body">
+                            <h3>Data Entry</h3>
+                            <p>Fast, accurate data input, cleaning, and migration across spreadsheets, databases, and platforms with meticulous attention to detail.</p>
+                        </div>
                     </div>
                     <div class="service-card animate-on-scroll">
-                        <div class="service-number">03</div>
-                        <h3>Calendar & Schedule Coordination</h3>
-                        <p>Zero scheduling conflicts and missed appointments &mdash; managed through proactive coordination and timezone-aware reminders.</p>
+                        <div class="service-image"><img src="SERVICES/CUSTOMER SERVICE.jpg" alt="Customer Service" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'service-image-placeholder\'><i class=\'fas fa-headset\'></i></div>'"></div>
+                        <div class="service-body">
+                            <h3>Customer Service</h3>
+                            <p>Professional, empathetic client communication via email, chat, and phone to ensure a consistently positive experience for your customers.</p>
+                        </div>
                     </div>
                     <div class="service-card animate-on-scroll">
-                        <div class="service-number">04</div>
-                        <h3>Document Preparation & Formatting</h3>
-                        <p>Professional, polished documents ready for use &mdash; created through careful formatting, proofreading, and file organization.</p>
+                        <div class="service-image"><img src="SERVICES/EMAIL MANAGEMENT.jpg" alt="Email Management" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'service-image-placeholder\'><i class=\'fas fa-inbox\'></i></div>'"></div>
+                        <div class="service-body">
+                            <h3>Email Management</h3>
+                            <p>Structured inbox organization with smart filters, labels, templates, and priority management to keep your communications clear and actionable.</p>
+                        </div>
                     </div>
                     <div class="service-card animate-on-scroll">
-                        <div class="service-number">05</div>
-                        <h3>Internet Research & Data Collection</h3>
-                        <p>Thorough, reliable research delivered in organized formats &mdash; compiled through systematic sourcing and cross-referencing.</p>
+                        <div class="service-image"><img src="SERVICES/CALENDAR ORGANIZATION.jpg" alt="Calendar Management" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'service-image-placeholder\'><i class=\'fas fa-calendar-alt\'></i></div>'"></div>
+                        <div class="service-body">
+                            <h3>Calendar Management</h3>
+                            <p>Proactive scheduling, appointment coordination, timezone-aware planning, and reminder systems to eliminate conflicts and missed meetings.</p>
+                        </div>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-image"><img src="SERVICES/INTERNET RESEARCH.jpg" alt="Internet Research" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'service-image-placeholder\'><i class=\'fas fa-search\'></i></div>'"></div>
+                        <div class="service-body">
+                            <h3>Internet Research</h3>
+                            <p>Thorough, organized research with reliable sourcing, data synthesis, and clear summaries delivered in your preferred format.</p>
+                        </div>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <div class="service-image"><img src="SERVICES/TRAVEL PLANNING.jpg" alt="Travel Planning" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'service-image-placeholder\'><i class=\'fas fa-plane\'></i></div>'"></div>
+                        <div class="service-body">
+                            <h3>Travel Planning</h3>
+                            <p>End-to-end trip coordination including itinerary building, accommodation research, budget tracking, and contingency planning.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section tools" id="tools">
+        <!-- ===== PROJECTS ===== -->
+        <section class="section" id="projects">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <p class="section-label">Tools I Work In</p>
-                    <h2 class="section-title">The Platforms My Clients Hire Me to Be Fluent In</h2>
-                    <p class="section-description">The platforms I use daily to keep your business running efficiently.</p>
+                    <span class="section-label">Featured Projects</span>
+                    <h2 class="section-title">Personal Project</h2>
+                    <p class="section-desc">Sample projects that demonstrate my organizational skills, attention to detail, and ability to build systems that work.</p>
                 </div>
-                <div class="tools-category animate-on-scroll">
-                    <h3>Productivity & Workspace</h3>
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googledocs.svg" alt="Google Docs" onerror="this.parentElement.innerHTML='<i class=&quot;fab fa-google&quot;></i>'"></div>
-                            <span>Google Docs</span>
+                <div class="projects-grid">
+                    <a href="case-study-travel-dashboard.html" class="project-card-link">
+                        <div class="project-card animate-on-scroll">
+                            <div class="project-card-image">
+                                <img src="PROJECT/TRAVEL ITINERARY_01.png" alt="Travel Planning Dashboard" onerror="this.style.display='none';this.parentElement.innerHTML='<div class=\'project-image-placeholder\'><i class=\'fas fa-plane\'></i></div>'">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-card-category">Planning &amp; Organization</span>
+                                <h3 class="project-card-title">Travel Planning Dashboard</h3>
+                                <p class="project-card-desc">A centralized Google Sheets dashboard for organizing international travel itineraries, accommodations, destinations, and schedules in one place.</p>
+                                <div class="project-card-skills">
+                                    <span class="project-skill-badge">Google Sheets</span>
+                                    <span class="project-skill-badge">Travel Planning</span>
+                                    <span class="project-skill-badge">Research</span>
+                                    <span class="project-skill-badge">Data Organization</span>
+                                </div>
+                                <span class="project-card-btn">View Project Details <i class="fas fa-arrow-right"></i></span>
+                                <span class="project-card-caption">Click anywhere on the card to explore this project.</span>
+                            </div>
                         </div>
-                        <div class="tool-card">
-                            <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlesheets.svg" alt="Google Sheets" onerror="this.parentElement.innerHTML='<i class=&quot;fas fa-table&quot;></i>'"></div>
-                            <span>Google Sheets</span>
-                        </div>
-                        <div class="tool-card">
-                            <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googledrive.svg" alt="Google Drive" onerror="this.parentElement.innerHTML='<i class=&quot;fab fa-google-drive&quot;></i>'"></div>
-                            <span>Google Drive</span>
-                        </div>
-                        <div class="tool-card">
-                            <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlecalendar.svg" alt="Google Calendar" onerror="this.parentElement.innerHTML='<i class=&quot;fas fa-calendar-check&quot;></i>'"></div>
-                            <span>Google Calendar</span>
-                        </div>
-                        <div class="tool-card">
-                            <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg" alt="Microsoft 365" onerror="this.parentElement.innerHTML='<i class=&quot;fab fa-microsoft&quot;></i>'"></div>
-                            <span>Microsoft 365</span>
-                        </div>
-                        <div class="tool-card">
-                            <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftword.svg" alt="MS Word" onerror="this.parentElement.innerHTML='<i class=&quot;fas fa-file-word&quot;></i>'"></div>
-                            <span>MS Word</span>
-                        </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="tools-category animate-on-scroll">
-                    <h3>Communication</h3>
+            </div>
+        </section>
+
+        <!-- ===== TOOLS ===== -->
+        <section class="section" id="tools">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <span class="section-label">Tools I Use</span>
+                    <h2 class="section-title">The Platforms I Work In</h2>
+                    <p class="section-desc">Familiar tools that help me deliver efficient, organized support for your business.</p>
+                </div>
                 <div class="tools-grid">
-                    <div class="tool-card">
-                        <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/zoom.svg" alt="Zoom" onerror="this.parentElement.innerHTML='<i class=&quot;fas fa-video&quot;></i>'"></div>
+                    <div class="tool-item animate-on-scroll">
+                        <div class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googledocs.svg" alt="Google Workspace" onerror="this.parentElement.innerHTML='<i style=&quot;font-size:22px;color:#B9BCC5;&quot; class=&quot;fas fa-cloud&quot;></i>'"></div>
+                        <span>Google Workspace</span>
+                    </div>
+                    <div class="tool-item animate-on-scroll">
+                        <div class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg" alt="Microsoft Office" onerror="this.parentElement.innerHTML='<i style=&quot;font-size:22px;color:#B9BCC5;&quot; class=&quot;fab fa-microsoft&quot;></i>'"></div>
+                        <span>Microsoft Office</span>
+                    </div>
+                    <div class="tool-item animate-on-scroll">
+                        <div class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googledrive.svg" alt="Google Drive" onerror="this.parentElement.innerHTML='<i style=&quot;font-size:22px;color:#B9BCC5;&quot; class=&quot;fab fa-google-drive&quot;></i>'"></div>
+                        <span>Google Drive</span>
+                    </div>
+                    <div class="tool-item animate-on-scroll">
+                        <div class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googledocs.svg" alt="Google Docs" onerror="this.parentElement.innerHTML='<i style=&quot;font-size:22px;color:#B9BCC5;&quot; class=&quot;fas fa-file-alt&quot;></i>'"></div>
+                        <span>Google Docs</span>
+                    </div>
+                    <div class="tool-item animate-on-scroll">
+                        <div class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlesheets.svg" alt="Google Sheets" onerror="this.parentElement.innerHTML='<i style=&quot;font-size:22px;color:#B9BCC5;&quot; class=&quot;fas fa-table&quot;></i>'"></div>
+                        <span>Google Sheets</span>
+                    </div>
+                    <div class="tool-item animate-on-scroll">
+                        <div class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg" alt="Microsoft Excel" onerror="this.parentElement.innerHTML='<i style=&quot;font-size:22px;color:#B9BCC5;&quot; class=&quot;fas fa-file-excel&quot;></i>'"></div>
+                        <span>Microsoft Excel</span>
+                    </div>
+                    <div class="tool-item animate-on-scroll">
+                        <div class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/canva.svg" alt="Canva" onerror="this.parentElement.innerHTML='<i style=&quot;font-size:22px;color:#B9BCC5;&quot; class=&quot;fas fa-paint-brush&quot;></i>'"></div>
+                        <span>Canva</span>
+                    </div>
+                    <div class="tool-item animate-on-scroll">
+                        <div class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/slack.svg" alt="Slack" onerror="this.parentElement.innerHTML='<i style=&quot;font-size:22px;color:#B9BCC5;&quot; class=&quot;fab fa-slack&quot;></i>'"></div>
+                        <span>Slack</span>
+                    </div>
+                    <div class="tool-item animate-on-scroll">
+                        <div class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/zoom.svg" alt="Zoom" onerror="this.parentElement.innerHTML='<i style=&quot;font-size:22px;color:#B9BCC5;&quot; class=&quot;fas fa-video&quot;></i>'"></div>
                         <span>Zoom</span>
                     </div>
-                    <div class="tool-card">
-                        <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlemeet.svg" alt="Google Meet" onerror="this.parentElement.innerHTML='<i class=&quot;fas fa-video&quot;></i>'"></div>
-                        <span>Google Meet</span>
+                    <div class="tool-item animate-on-scroll">
+                        <div class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/opencv.svg" alt="Opencode" onerror="this.parentElement.innerHTML='<i style=&quot;font-size:22px;color:#B9BCC5;&quot; class=&quot;fas fa-code&quot;></i>'"></div>
+                        <span>Opencode</span>
                     </div>
-                    <div class="tool-card">
-                        <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="Gmail" onerror="this.parentElement.innerHTML='<i class=&quot;fas fa-envelope&quot;></i>'"></div>
-                        <span>Gmail / Outlook</span>
-                    </div>
-                </div>
-                </div>
-                <div class="tools-category animate-on-scroll">
-                    <h3>Design & Social Media</h3>
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/canva.svg" alt="Canva" onerror="this.parentElement.innerHTML='<i class=&quot;fas fa-palette&quot;></i>'"></div>
-                            <span>Canva</span>
-                        </div>
-                        <div class="tool-card">
-                            <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/capcut.svg" alt="CapCut" onerror="this.parentElement.innerHTML='<i class=&quot;fas fa-film&quot;></i>'"></div>
-                            <span>CapCut</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="tools-category animate-on-scroll">
-                    <h3>AI & Automation</h3>
-                    <div class="tools-grid">
-                        <div class="tool-card">
-                            <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg" alt="ChatGPT" onerror="this.parentElement.innerHTML='<i class=&quot;fas fa-robot&quot;></i>'"></div>
-                            <span>ChatGPT</span>
-                        </div>
-                        <div class="tool-card">
-                            <div class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/opencode.svg" alt="OpenCode" onerror="this.parentElement.innerHTML='<i class=&quot;fas fa-code&quot;></i>'"></div>
-                            <span>OpenCode</span>
-                        </div>
+                    <div class="tool-item animate-on-scroll">
+                        <div class="tool-icon"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg" alt="ChatGPT" onerror="this.parentElement.innerHTML='<i style=&quot;font-size:22px;color:#B9BCC5;&quot; class=&quot;fas fa-robot&quot;></i>'"></div>
+                        <span>ChatGPT</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section why-me" id="why-me">
+        <!-- ===== WHY ME ===== -->
+        <section class="section section--alt" id="why-me">
             <div class="container">
                 <div class="section-header animate-on-scroll">
-                    <p class="section-label">Why Work With Me</p>
-                    <h2 class="section-title">Why Choose Me</h2>
-                    <p class="section-description">The traits that make me a reliable, long-term partner for your business.</p>
+                    <span class="section-label">Why Work With Me</span>
+                    <h2 class="section-title">The Qualities I Bring</h2>
+                    <p class="section-desc">The traits that make me a reliable, long-term partner for your business.</p>
                 </div>
-                <div class="why-grid">
-                    <div class="why-card animate-on-scroll">
-                        <div class="why-icon"><i class="fas fa-bullseye"></i></div>
-                        <h3>Detail-Obsessed</h3>
-                        <p>I catch what others miss. From data entry to document management, accuracy is non-negotiable in everything I deliver.</p>
-                    </div>
-                    <div class="why-card animate-on-scroll">
-                        <div class="why-icon"><i class="fas fa-bolt"></i></div>
-                        <h3>Fast & Reliable</h3>
-                        <p>4-hour response time during business days. Deadlines met. Work shipped on time, every time. No chasing required.</p>
-                    </div>
-                    <div class="why-card animate-on-scroll">
-                        <div class="why-icon"><i class="fas fa-puzzle-piece"></i></div>
-                        <h3>Systems Thinker</h3>
-                        <p>I don't just complete tasks &mdash; I organize them into workflows that save you time today and scale as your business grows.</p>
-                    </div>
-                    <div class="why-card animate-on-scroll">
-                        <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
-                        <h3>Trustworthy & Discreet</h3>
-                        <p>Certified in data privacy and security. Your client information, contracts, and business data stay protected.</p>
-                    </div>
-                    <div class="why-card animate-on-scroll">
-                        <div class="why-icon"><i class="fas fa-sync-alt"></i></div>
-                        <h3>Adaptable</h3>
-                        <p>New tools? Different workflow? I learn fast and adjust quickly. You won't need to hold my hand &mdash; just point me in the right direction.</p>
-                    </div>
-                    <div class="why-card animate-on-scroll">
-                        <div class="why-icon"><i class="fas fa-heart"></i></div>
-                        <h3>Genuinely Cares</h3>
-                        <p>Your success is my success. I treat your business like my own and proactively look for ways to make your day easier.</p>
+                <div class="marquee-wrap">
+                    <div class="marquee-track">
+                        <div class="marquee-group">
+                            <span class="marquee-pill"><i class="fas fa-check-circle"></i> Reliable</span>
+                            <span class="marquee-pill"><i class="fas fa-layer-group"></i> Highly Organized</span>
+                            <span class="marquee-pill"><i class="fas fa-rocket"></i> Fast Learner</span>
+                            <span class="marquee-pill"><i class="fas fa-comment-dots"></i> Strong Communicator</span>
+                            <span class="marquee-pill"><i class="fas fa-briefcase"></i> Professional</span>
+                            <span class="marquee-pill"><i class="fas fa-sync-alt"></i> Adaptable</span>
+                            <span class="marquee-pill"><i class="fas fa-search"></i> Detail-Oriented</span>
+                            <span class="marquee-pill"><i class="fas fa-zap"></i> Efficient</span>
+                        </div>
+                        <div class="marquee-group">
+                            <span class="marquee-pill"><i class="fas fa-check-circle"></i> Reliable</span>
+                            <span class="marquee-pill"><i class="fas fa-layer-group"></i> Highly Organized</span>
+                            <span class="marquee-pill"><i class="fas fa-rocket"></i> Fast Learner</span>
+                            <span class="marquee-pill"><i class="fas fa-comment-dots"></i> Strong Communicator</span>
+                            <span class="marquee-pill"><i class="fas fa-briefcase"></i> Professional</span>
+                            <span class="marquee-pill"><i class="fas fa-sync-alt"></i> Adaptable</span>
+                            <span class="marquee-pill"><i class="fas fa-search"></i> Detail-Oriented</span>
+                            <span class="marquee-pill"><i class="fas fa-zap"></i> Efficient</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- ===== CTA ===== -->
+        <section class="section cta" id="cta">
+            <div class="container">
+                <div class="cta-inner animate-on-scroll">
+                    <span class="cta-label">BEFORE CONTACT</span>
+                    <h2 class="cta-title">Let's Make Your Business Run Smoother.</h2>
+                    <p class="cta-desc">Reliable virtual assistance so you can focus on growing your business while I handle the details.</p>
+                    <a href="Maryjoyce%20Hamm_Resume.pdf" target="_blank" rel="noopener" class="btn btn--cta">Let's Work Together<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT ===== -->
         <section class="section contact" id="contact">
             <div class="container">
-                <div class="contact-single animate-on-scroll">
-                    <p class="section-label">Get In Touch</p>
-                    <h2 class="section-title">Let's Work Together</h2>
-                    <p>Ready to reclaim your time and streamline your operations? I'd love to hear about your needs. Whether you need ongoing support or help with a specific project, let's start a conversation.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <strong>Email</strong>
-                                <a href="mailto:cantajoyce0@gmail.com">cantajoyce0@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
-                            <div>
-                                <strong>LinkedIn</strong>
-                                <a href="https://www.linkedin.com/in/maryjoyce-hamm" target="_blank" rel="noopener">maryjoyce-hamm</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <strong>Location</strong>
-                                <span>Bataan, Philippines</span>
-                            </div>
-                        </div>
+                <div class="contact-inner animate-on-scroll">
+                    <span class="contact-label">Let's Work Together</span>
+                    <h2 class="contact-title">Have a project in mind?</h2>
+                    <p class="contact-desc">I'd love to hear about your needs. Whether you need ongoing support or help with a specific project, let's start a conversation.</p>
+                    <div class="contact-availability">
+                        <span><i class="fas fa-check-circle"></i> Full-Time</span>
+                        <span><i class="fas fa-check-circle"></i> Part-Time</span>
+                        <span><i class="fas fa-check-circle"></i> Contract</span>
                     </div>
-                    <div class="contact-socials">
-                        <a href="https://www.linkedin.com/in/maryjoyce-hamm" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="contact-links">
+                        <a href="mailto:cantajoyce0@gmail.com" class="contact-link">
+                            <span class="contact-link-icon"><i class="fas fa-envelope"></i></span>
+                            <span class="contact-link-text">cantajoyce0@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/maryjoyce-hamm" target="_blank" rel="noopener" class="contact-link">
+                            <span class="contact-link-icon"><i class="fab fa-linkedin-in"></i></span>
+                            <span class="contact-link-text">maryjoyce-hamm</span>
+                        </a>
+                        <span class="contact-link">
+                            <span class="contact-link-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <span class="contact-link-text">Bataan, Philippines</span>
+                        </span>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="Maryjoyce%20Hamm_Resume.pdf" target="_blank" rel="noopener" class="btn btn--primary">Download Resume</a>
+                        <a href="mailto:cantajoyce0@gmail.com" class="btn btn--outline">Send Email</a>
                     </div>
                 </div>
             </div>
@@ -468,15 +439,25 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer-content">
-            <p>&copy; <span id="currentYear"></span> Mary Joyce Hamm. All rights reserved.</p>
-            <nav class="footer-nav">
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </nav>
+        <div class="container">
+            <div class="footer-inner">
+                <span class="footer-brand">MJH</span>
+                <p class="footer-copy">&copy; <span id="currentYear"></span> Mary Joyce Hamm. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <a href="https://www.linkedin.com/in/maryjoyce-hamm" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
