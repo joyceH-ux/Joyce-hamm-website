@@ -1002,41 +1002,124 @@ ul { list-style: none; }
 
 /* ========== TOOLS ========== */
 .tools-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
-.tool-item {
-    display: flex; flex-direction: column; align-items: center;
-    gap: 12px; padding: 28px 16px;
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: var(--radius); transition: all var(--base);
+.tool-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 32px 24px 28px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
     text-align: center;
+    transition: all var(--base);
 }
 
-.tool-item:hover {
-    border-color: var(--accent); transform: translateY(-6px);
+.tool-category:hover {
+    border-color: var(--accent);
+    transform: translateY(-6px);
     box-shadow: var(--shadow-glow);
     background: var(--card-hover);
 }
 
-.tool-icon {
-    width: 52px; height: 52px; display: flex;
-    align-items: center; justify-content: center;
-    transition: all var(--base); border-radius: 14px;
+.tool-category .tool-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--base);
+    border-radius: 14px;
     background: rgba(255,255,255,0.04);
 }
 
-.tool-icon img { width: 28px; height: 28px; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.55; transition: all var(--base); }
-
-.tool-item:hover .tool-icon {
+.tool-category:hover .tool-icon {
     background: var(--accent-subtle);
 }
 
-.tool-item:hover .tool-icon img { opacity: 1; filter: brightness(0) invert(1); }
+.tool-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
+    opacity: 0.55;
+    transition: all var(--base);
+}
 
-.tool-item span {
-    font-size: 12px; font-weight: 500; color: var(--text-secondary);
+.tool-category:hover .tool-icon img {
+    opacity: 1;
+}
+
+.tool-category:hover .tool-icon i {
+    opacity: 1;
+}
+
+.tool-category-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.01em;
+}
+
+.tool-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.tool-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: rgba(139, 92, 246, 0.08);
+    border: 1px solid rgba(139, 92, 246, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: var(--accent-secondary);
+    font-size: 0.72rem;
+    font-weight: 500;
+    line-height: 1.3;
+    transition: all var(--fast);
+}
+
+.tool-pill:hover {
+    background: rgba(139, 92, 246, 0.15);
+    border-color: rgba(139, 92, 246, 0.3);
+}
+
+.tool-pill img,
+.tool-pill i {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.tool-pill img {
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+}
+
+.tool-pill i {
+    font-size: 14px;
+    opacity: 0.7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tool-pill:hover img,
+.tool-pill:hover i {
+    opacity: 1;
 }
 
 /* ========== CONTACT ========== */
@@ -1523,8 +1606,8 @@ ul { list-style: none; }
     .project-card-title { font-size: 1rem; }
     .cert-grid { grid-template-columns: 1fr; gap: 14px; }
 
-    .tools-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
-    .tool-item { padding: 20px 12px; }
+    .tools-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .tool-category { padding: 24px 18px 22px; }
 
     .cta-title { font-size: 1.5rem; }
 
@@ -1551,7 +1634,7 @@ ul { list-style: none; }
     .hero-badge { font-size: 9px; padding: 3px 8px; }
 
     .marquee-pill { font-size: 0.82rem; padding: 8px 16px; }
-    .tools-grid { grid-template-columns: repeat(2, 1fr); }
+    .tools-grid { grid-template-columns: 1fr; }
     .cta-title { font-size: 1.25rem; }
     .btn--cta { padding: 14px 28px; font-size: 0.9rem; }
     .cert-grid { grid-template-columns: 1fr; gap: 12px; }
