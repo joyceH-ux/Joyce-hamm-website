@@ -814,8 +814,7 @@ ul { list-style: none; }
 /* ========== PROJECTS ========== */
 .projects-grid {
     display: grid;
-    grid-template-columns: minmax(0, 640px);
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
 }
 
