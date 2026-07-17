@@ -33,11 +33,6 @@
             margin-bottom: 16px;
             line-height: 1.2;
         }
-        .case-study-header p {
-            font-size: 1.05rem;
-            color: var(--text-secondary);
-            line-height: 1.8;
-        }
         .case-study-gallery {
             max-width: 800px;
             margin: 0 auto 48px;
@@ -51,18 +46,15 @@
             border-radius: var(--radius);
             border: 1px solid var(--border);
             display: block;
-            transition: border-color var(--fast), transform var(--fast);
+            transition: border-color var(--fast);
         }
-        .case-study-gallery img:hover {
-            border-color: var(--border-hover);
-            transform: scale(1.01);
-        }
+        .case-study-gallery img:hover { border-color: var(--border-hover); }
         .case-study-body {
-            max-width: 800px;
+            max-width: 720px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            gap: 32px;
+            gap: 28px;
         }
         .case-study-section {
             display: flex;
@@ -71,7 +63,7 @@
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: var(--radius);
-            padding: 32px 36px;
+            padding: 28px 32px;
             transition: border-color var(--fast);
         }
         .case-study-section:hover { border-color: var(--border-hover); }
@@ -97,24 +89,6 @@
             margin-bottom: 8px;
         }
         .case-study-content p { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.8; }
-        .case-study-content ul { padding: 0; margin: 4px 0 0; }
-        .case-study-content ul li {
-            position: relative;
-            padding-left: 20px;
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            line-height: 1.8;
-        }
-        .case-study-content ul li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 11px;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: var(--accent);
-        }
         .case-study-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
         .case-study-tag {
             padding: 6px 16px;
@@ -131,7 +105,6 @@
             color: var(--text-secondary);
             font-size: 0.9rem;
             font-weight: 500;
-            margin-top: 32px;
             padding: 12px 24px;
             border-radius: 100px;
             border: 1px solid var(--border);
@@ -147,7 +120,7 @@
             .case-study { padding-top: 90px; }
             .case-study-header h1 { font-size: 1.6rem; }
             .case-study-gallery { grid-template-columns: 1fr; gap: 12px; }
-            .case-study-section { flex-direction: column; padding: 24px 20px; gap: 12px; }
+            .case-study-section { flex-direction: column; padding: 20px; gap: 12px; }
         }
     </style>
 </head>
@@ -157,10 +130,9 @@
 
     <nav class="nav" id="nav">
         <div class="nav-inner">
-            <a href="index.html#about" class="nav-logo">MJH</a>
+            <a href="index.html" class="nav-logo">MJH</a>
             <div class="nav-links" id="navLinks">
                 <a href="index.html#about" class="nav-link">About</a>
-                <a href="index.html#experience" class="nav-link">Experience</a>
                 <a href="index.html#skills" class="nav-link">Skills</a>
                 <a href="index.html#projects" class="nav-link">Projects</a>
                 <a href="index.html#tools" class="nav-link">Tools</a>
@@ -180,7 +152,7 @@
                 <div class="case-study-header">
                     <span class="case-study-category">Graphic Design</span>
                     <h1>Canva Design</h1>
-                    <p>Created professional visual designs using Canva for mock client and personal projects, focusing on clean layouts, branding, and engaging digital content.</p>
+                    <p>Professional visual assets created using Canva for presentations, invitations, and social media content.</p>
                 </div>
 
                 <div class="case-study-gallery">
@@ -193,31 +165,18 @@
                 <div class="case-study-body">
 
                     <div class="case-study-section">
-                        <div class="case-study-icon"><i class="fas fa-video"></i></div>
+                        <div class="case-study-icon"><i class="fas fa-eye"></i></div>
                         <div class="case-study-content">
-                            <h2>Scenario</h2>
-                            <p>A client needed professional marketing materials and custom event designs that were visually appealing and aligned with their brand.</p>
+                            <h2>Project Overview</h2>
+                            <p>A collection of professional visual assets created using Canva, including wedding invitations, YouTube thumbnails, and social media graphics — designed to communicate brand messages clearly and attractively.</p>
                         </div>
                     </div>
 
                     <div class="case-study-section">
-                        <div class="case-study-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                        <div class="case-study-icon"><i class="fas fa-handshake"></i></div>
                         <div class="case-study-content">
-                            <h2>Challenge</h2>
-                            <p>Create attractive, easy-to-read designs while maintaining a clean and consistent visual style.</p>
-                        </div>
-                    </div>
-
-                    <div class="case-study-section">
-                        <div class="case-study-icon"><i class="fas fa-check-double"></i></div>
-                        <div class="case-study-content">
-                            <h2>Tasks Completed</h2>
-                            <ul>
-                                <li>Designed two custom wedding invitations.</li>
-                                <li>Created two YouTube thumbnails.</li>
-                                <li>Applied typography, color harmony, and layout principles.</li>
-                                <li>Organized editable Canva files for future updates.</li>
-                            </ul>
+                            <h2>How I Can Help Clients</h2>
+                            <p>I create clean and professional designs for presentations, invitations, and social media content that help clients communicate their brand message clearly and stand out.</p>
                         </div>
                     </div>
 
@@ -228,29 +187,6 @@
                             <div class="case-study-tags">
                                 <span class="case-study-tag">Canva</span>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="case-study-section">
-                        <div class="case-study-icon"><i class="fas fa-star"></i></div>
-                        <div class="case-study-content">
-                            <h2>Skills Demonstrated</h2>
-                            <div class="case-study-tags">
-                                <span class="case-study-tag">Basic Graphic Design</span>
-                                <span class="case-study-tag">Canva</span>
-                                <span class="case-study-tag">Visual Communication</span>
-                                <span class="case-study-tag">Branding</span>
-                                <span class="case-study-tag">Creativity</span>
-                                <span class="case-study-tag">Attention to Detail</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="case-study-section">
-                        <div class="case-study-icon"><i class="fas fa-flag-checkered"></i></div>
-                        <div class="case-study-content">
-                            <h2>Outcome</h2>
-                            <p>This project showcases my ability to create clean, professional visual content using Canva to support branding, marketing, and digital content creation for clients.</p>
                         </div>
                     </div>
 
@@ -268,7 +204,6 @@
                 <p class="footer-copy">&copy; <span id="currentYear"></span> Mary Joyce Hamm. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="index.html#about">About</a>
-                    <a href="index.html#experience">Experience</a>
                     <a href="index.html#skills">Skills</a>
                     <a href="index.html#projects">Projects</a>
                     <a href="index.html#contact">Contact</a>

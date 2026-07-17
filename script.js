@@ -173,18 +173,6 @@
 
     setActiveLink();
 
-    /* --- Hero card initial stagger animation --- */
-    var heroCards = document.querySelectorAll('.hero-card');
-    heroCards.forEach(function (card, i) {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(20px)';
-        setTimeout(function () {
-            card.style.transition = 'opacity 0.6s cubic-bezier(0.4,0,0.2,1), transform 0.6s cubic-bezier(0.4,0,0.2,1)';
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-        }, 300 + (i * 120));
-    });
-
     /* --- Back to Top --- */
     var backToTop = document.getElementById('backToTop');
 
