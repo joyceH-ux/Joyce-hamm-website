@@ -553,72 +553,39 @@ ul { list-style: none; }
     box-shadow: 0 4px 20px rgba(139, 92, 246, 0.1);
 }
 
-/* ========== TIMELINE (Experience) ========== */
-.timeline {
-    position: relative;
-    max-width: 800px;
+/* ========== EXPERIENCE CARDS ========== */
+.exp-grid {
+    max-width: 780px;
     margin: 0;
-    padding-left: 32px;
 }
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 11px;
-    top: 12px;
-    bottom: 12px;
-    width: 2px;
-    background: linear-gradient(to bottom, var(--accent), rgba(139,92,246,0.2));
-    border-radius: 2px;
-    box-shadow: 0 0 8px rgba(139,92,246,0.3);
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 32px;
-}
-
-.timeline-item:last-child {
-    margin-bottom: 0;
-}
-
-.timeline-dot {
-    position: absolute;
-    left: -26px;
-    top: 30px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: var(--accent);
-    border: 3px solid var(--bg);
-    box-shadow: 0 0 12px rgba(139,92,246,0.5), 0 0 24px rgba(139,92,246,0.2);
-    z-index: 1;
-}
-
-.timeline-card {
-    background: rgba(31, 34, 51, 0.5);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+.exp-card {
+    background: var(--card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 28px 32px;
+    margin-bottom: 24px;
     transition: all var(--base);
 }
 
-.timeline-card:hover {
+.exp-card:last-of-type {
+    margin-bottom: 0;
+}
+
+.exp-card:hover {
     border-color: var(--border-hover);
-    box-shadow: 0 0 30px var(--accent-glow), var(--shadow-lg);
-    background: rgba(31, 34, 51, 0.7);
+    box-shadow: var(--shadow-lg), 0 0 40px var(--accent-glow);
+    background: var(--card-hover);
     transform: translateY(-3px);
 }
 
-.timeline-card-header {
+.exp-card-header {
     display: flex;
     gap: 16px;
     align-items: flex-start;
 }
 
-.timeline-card-icon {
+.exp-card-icon {
     width: 44px;
     height: 44px;
     border-radius: 12px;
@@ -632,13 +599,13 @@ ul { list-style: none; }
     transition: all var(--base);
 }
 
-.timeline-card:hover .timeline-card-icon {
+.exp-card:hover .exp-card-icon {
     background: var(--accent);
     color: var(--white);
     box-shadow: 0 4px 16px rgba(139, 92, 246, 0.3);
 }
 
-.timeline-job {
+.exp-job {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--text);
@@ -646,25 +613,25 @@ ul { list-style: none; }
     line-height: 1.3;
 }
 
-.timeline-company {
+.exp-company {
     font-size: 0.85rem;
     font-weight: 500;
     color: var(--accent-hover);
     line-height: 1.4;
 }
 
-.timeline-divider {
+.exp-divider {
     height: 1px;
     background: var(--border);
     margin: 16px 0;
 }
 
-.timeline-body ul {
+.exp-body ul {
     padding: 0;
     margin: 0 0 16px 0;
 }
 
-.timeline-body ul li {
+.exp-body ul li {
     position: relative;
     padding-left: 18px;
     font-size: 0.88rem;
@@ -674,9 +641,9 @@ ul { list-style: none; }
     margin-bottom: 10px;
 }
 
-.timeline-body ul li:last-child { margin-bottom: 0; }
+.exp-body ul li:last-child { margin-bottom: 0; }
 
-.timeline-body ul li::before {
+.exp-body ul li::before {
     content: '';
     position: absolute;
     left: 0;
@@ -688,13 +655,13 @@ ul { list-style: none; }
     opacity: 0.6;
 }
 
-.timeline-tags {
+.exp-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
 
-.timeline-tag {
+.exp-tag {
     padding: 5px 14px;
     border-radius: 20px;
     background: rgba(139, 92, 246, 0.08);
@@ -705,17 +672,17 @@ ul { list-style: none; }
     transition: all var(--fast);
 }
 
-.timeline-tag:hover {
+.exp-tag:hover {
     background: rgba(139, 92, 246, 0.15);
     border-color: rgba(139, 92, 246, 0.3);
 }
 
-.timeline-testimonial {
+.exp-testimonial {
     margin-top: 36px;
     max-width: 460px;
 }
 
-.timeline-testimonial-label {
+.exp-testimonial-label {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -727,7 +694,7 @@ ul { list-style: none; }
     margin-bottom: 14px;
 }
 
-.timeline-testimonial-label i {
+.exp-testimonial-label i {
     font-size: 10px;
     opacity: 0.7;
 }
@@ -1331,42 +1298,41 @@ ul { list-style: none; }
 .qualities-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 14px;
     margin-bottom: 40px;
 }
 
 .quality-card {
-    background: rgba(31, 34, 51, 0.5);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: var(--card);
     border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 20px 24px;
+    border-radius: var(--radius-sm);
+    padding: 18px 22px;
     display: flex;
     align-items: flex-start;
     gap: 12px;
     transition: all var(--base);
+    cursor: default;
 }
 
 .quality-card:hover {
     border-color: var(--border-hover);
     box-shadow: 0 0 24px var(--accent-glow);
-    background: rgba(31, 34, 51, 0.7);
+    background: var(--card-hover);
     transform: translateY(-2px);
 }
 
 .quality-card i {
     color: var(--accent);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     margin-top: 3px;
     flex-shrink: 0;
 }
 
 .quality-card p {
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     font-weight: 300;
     color: var(--text-secondary);
-    line-height: 1.7;
+    line-height: 1.65;
     margin: 0;
 }
 
@@ -1759,8 +1725,7 @@ ul { list-style: none; }
     .about-image-wrap { display: flex; justify-content: center; margin-top: 0; }
     .about-image { width: 300px; height: 380px; }
     .about-badges { justify-content: center; }
-    .timeline { max-width: 100%; padding-left: 28px; }
-    .timeline-dot { left: -22px; width: 12px; height: 12px; }
+    .exp-grid { max-width: 100%; }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
     .qualities-grid { grid-template-columns: 1fr; }
     .projects-grid { gap: 24px; }
@@ -1818,11 +1783,9 @@ ul { list-style: none; }
     .cert-card-body { padding: 0 20px 28px; }
     .modal { padding: 20px; }
 
-    .timeline { padding-left: 24px; }
-    .timeline-dot { left: -18px; width: 10px; height: 10px; border-width: 2px; }
-    .timeline-card { padding: 20px 22px; }
-    .timeline-tags { gap: 6px; }
-    .timeline-tag { font-size: 0.7rem; padding: 4px 10px; }
+    .exp-card { padding: 22px 24px; }
+    .exp-tags { gap: 6px; }
+    .exp-tag { font-size: 0.7rem; padding: 4px 10px; }
 
     .tools-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .tool-category { padding: 24px 18px 22px; }
